@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/LayoutStyle.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/MainStyle.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+            <a class="navbar-brand" href="#">HELISHOP</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="@Url.Action("Main")">Главная <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("List")">Каталог</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Contacts")">Контакты</a>
+                    </li>
+                </ul>
+                <form class="form-inline mt-2 mt-md-0">
+                    <button class="btn btn-light my-2 my-sm-0 mr-2" type="submit">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                        </svg>
+                    </button>
+                    <button class="btn btn-light my-2 my-sm-0" type="submit">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z" />
+                            <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+
+    <div>
+        @RenderBody()
+    </div>
+    
+    <footer class="container py-5">
+        <div class="row">
+            <div class="col-12 col-md">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></svg>
+                <small class="d-block mb-3 text-muted">© 2017-2020</small>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Будущее</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Преколдесы</a></li>
+                    <li><a class="text-muted" href="#">Будущее</a></li>
+                    <li><a class="text-muted" href="#">Команда</a></li>
+                    <li><a class="text-muted" href="#">Для закащиков</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Ресурсы</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Ресурсы</a></li>
+                    <li><a class="text-muted" href="#">Имя компании</a></li>
+                    <li><a class="text-muted" href="#">Наши поставщики</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Программы</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Бизнес</a></li>
+                    <li><a class="text-muted" href="#">Обучение</a></li>
+                    <li><a class="text-muted" href="#">Правительство</a></li>
+                    <li><a class="text-muted" href="#">Коммерческие программы</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>О нас</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Команда</a></li>
+                    <li><a class="text-muted" href="#">Где нас найти</a></li>
+                    <li><a class="text-muted" href="#">Конфиденциальность</a></li>
+                    <li><a class="text-muted" href="#">Права</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script scr="~/js/bootstrap.min.js"></script>
+</body>
+</html>

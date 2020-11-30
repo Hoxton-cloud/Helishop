@@ -1,0 +1,154 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 50px;
+    margin-bottom: 58px;
+}
+
+h3 {
+    font-size: 25px;
+    margin-bottom: 28px;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding-top: 113px
+}
+
+p {
+    margin: 0;
+}
+
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: black;
+    /*padding-top: 57px;
+	color: #fff;
+	padding-bottom: 322px*/
+}
+
+header a {
+    color: #fff;
+}
+
+.logo {
+    margin-right: 69px;
+    margin-left: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.menu {
+    display: flex;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 20px;
+}
+
+    .menu li a {
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+        .menu li a:hover {
+            border-bottom: 1px solid #fff;
+        }
+
+    .menu li {
+        margin-right: 40px;
+    }
+
+.cab {
+    font-size: 17px;
+    margin-left: auto;
+    letter-spacing: 0.1em;
+    margin-right: 150px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    background-color: #0000;
+}
+
+/* content */
+
+.offer {
+    text-transform: uppercase;
+    margin-top: 100px;
+    margin-left: 200px;
+    color: #000;
+}
+
+    .offer p {
+        font-size: 30px;
+        letter-spacing: 0.1em;
+    }
+
+    .offer h1 {
+        font-size: 100px;
+        margin-bottom: 19px;
+        margin-top: -9px;
+        letter-spacing: 0.02em
+    }
+
+.btn {
+    display: block;
+    font-size: 17px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    padding: 17px 47px;
+    border: 5px solid #000;
+    width: 238px;
+    transition: all 0.5s ease;
+}
+
+    .btn:hover {
+        background: #000;
+        color: #fff;
+    }
+
+.to-shop-baner {
+    background: url('/img/header-bg2.jpg') no-repeat;
+    color: #fff;
+    padding-bottom: 400px;
+    font-family: 'Russo One', sans-serif;
+}
+
+    .to-shop-baner a:visited {
+        color: #000;
+    }
+
+    .to-shop-baner a:hover:visited {
+        color: #fff;
+    }
+
+    .to-shop-baner a:link {
+        color: #000;
+    }
